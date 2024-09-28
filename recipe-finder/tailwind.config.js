@@ -9,6 +9,7 @@ export default {
       colors: {
         brandYellow: "#FFB800",
         brandOrange: "#FF6B00",
+        brandGrey: "#B3B3B3",
       },
     },
   },
