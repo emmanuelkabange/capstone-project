@@ -44,7 +44,7 @@ const HomePage = () => {
         {/* Card 1 */}
         <div className="bg-black rounded-lg overflow-hidden shadow-lg w-80">
           <img
-            src="public/2.jpg"
+            src="/2.jpg"
             alt="Vegetable Stir-Fry"
             className="w-full h-52 object-cover"
           />
