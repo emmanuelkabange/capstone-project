@@ -1,16 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./HomePage";
-import RecipeCard from "./ResultsPage";
-import RecipeDetailsPage from "./RecipeDetails";
+import ResultsPage from "./ResultsPage";
+import RecipeDetails from "./RecipeDetails";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/Results" element={<RecipeCard />} />
-        <Route path="/Details" element={<RecipeDetailsPage />} />
+        <Route path="/results" element={<ResultsPage />} />
+        <Route path="/recipe/:idMeal" element={<RecipeDetails />} />
       </Routes>
     </Router>
   );
