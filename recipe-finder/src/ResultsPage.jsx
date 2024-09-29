@@ -19,7 +19,7 @@ const ResultsPage = () => {
             recipes.map((recipe) => (
               <div
                 key={recipe.idMeal}
-                className="bg-brandOrange rounded-lg overflow-hidden hover:opacity-[75%] shadow-lg"
+                className="bg-brandOrange rounded-lg overflow-hidden hover:opacity-[75%] transition-all shadow-lg"
               >
                 <img
                   src={recipe.strMealThumb}
