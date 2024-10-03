@@ -19,16 +19,16 @@ const Footer = () => {
             href="www.linkedin.com/in/emmanuel-kabange-15933b2a3"
             className="hover:underline"
           >
-            About Me
+            About
           </a>
           <a href="mailto:emmanuelwelek@gmail.com" className="hover:underline">
-            Contact Me
+            Contact
           </a>
           <a
             href="https://www.themealdb.com/api.php"
             className="hover:underline"
           >
-            Visit the MealDB API
+            MealDB API
           </a>
           <a
             href="https://github.com/emmanuelkabange"
