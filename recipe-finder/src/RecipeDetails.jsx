@@ -70,7 +70,7 @@ const RecipeDetails = () => {
 
   return (
     <div className="p-6 bg-brandBrown bg-opacity-[90%] min-h-screen flex flex-col items-center">
-      <div className="container mx-auto bg-brandBrown p-8 rounded-lg shadow-lg w-[50%]">
+      <div className="container mx-auto bg-brandBrown p-8 rounded-lg shadow-lg w-full md:w-[50%]">
         <h1 className="text-5xl font-bold text-center mb-8 text-brandYellow">
           Recipe Results
         </h1>

@@ -46,7 +46,7 @@ const HomePage = () => {
         <img
           src="dishdashlogotransparent.png"
           alt="DishDash Logo"
-          className="top-4 left-4 mx-auto w-[200px] h-[200px]"
+          className="top-4 left-4 mx-auto w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px]"
         />
 
         {/* Header Text */}
