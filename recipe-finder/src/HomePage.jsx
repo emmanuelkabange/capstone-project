@@ -51,9 +51,10 @@ const HomePage = () => {
 
         {/* Header Text */}
         <h1 className="text-[45px] font-bold text-brandYellow mt-[65px] leading-[60px]">
-          Discover <span className="text-brandOrange">Quick</span>, Delicious
-          Recipes With <br />
-          DishDash
+          Discover <span className="text-brandOrange">Quick</span>,{" "}
+          <span className="text-brandOrange">Delicious</span> Recipes With{" "}
+          <br />
+          <span className="text-brandOrange">DishDash</span>
         </h1>
 
         {/* Search Bar */}
@@ -66,8 +67,11 @@ const HomePage = () => {
             onChange={(e) => setRecipeName(e.target.value)}
             onKeyDown={handleKeyDown}
           />
+        </div>
+
+        <div>
           <button
-            className="ml-[21px] mt-[35px] w-[123px] h-[48px] bg-white text-black font-bold rounded-[50px] shadow-lg focus:outline-none focus:ring-2 focus:ring-brandYellow"
+            className="ml-[21px] mt-[25px] w-[123px] h-[48px] bg-white text-black font-bold rounded-[50px] shadow-lg focus:outline-none focus:ring-2 focus:ring-brandYellow sm:hidden"
             onClick={handleSearch}
           >
             Search
