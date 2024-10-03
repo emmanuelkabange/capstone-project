@@ -58,7 +58,7 @@ const HomePage = () => {
         </h1>
 
         {/* Search Bar */}
-        <div className="mt-[20] flex justify-center items-center">
+        <div className="mt-[20] sm:mx-3 flex justify-center items-center">
           <input
             type="text"
             placeholder="Type your recipe..."
