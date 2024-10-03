@@ -3,28 +3,28 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-brandBrown text-brandYellow p-4">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
         {/* Logo Section */}
-        <div className="flex items-center space-x-2">
-          <img src="/dishdashlogo.png" alt="Logo" className="h-8" />{" "}
+        <div className="flex items-center space-x-2 mb-4 sm:mb-0">
+          <img src="/dishdashlogo.png" alt="Logo" className="h-8" />
           {/* Adjust the logo path */}
           <span className="font-bold text-lg">DishDash</span>
         </div>
 
         {/* Copyright Text */}
-        <div className="text-center">
-          <p className="text-md"> &copy; Emmanuel Kabange, 2024</p>
+        <div className="text-center mb-4 sm:mb-0">
+          <p className="text-md">&copy; Emmanuel Kabange, 2024</p>
         </div>
 
         {/* Links Section */}
-        <div className="flex space-x-4">
+        <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
           <a
-            href="www.linkedin.com/in/emmanuel-kabange-15933b2a3"
+            href="https://www.linkedin.com/in/emmanuel-kabange-15933b2a3"
             className="hover:underline"
           >
             About Me
           </a>
-          <a href="mailto:emmanuelwelek@gmail.com" className=" hover:underline">
+          <a href="mailto:emmanuelwelek@gmail.com" className="hover:underline">
             Contact Me
           </a>
           <a

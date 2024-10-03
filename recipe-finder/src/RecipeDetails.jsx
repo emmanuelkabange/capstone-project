@@ -69,47 +69,52 @@ const RecipeDetails = () => {
   }
 
   return (
-    <div className="p-6 bg-brandOrange min-h-screen">
-      <div className="container mx-auto bg-white p-8 rounded-lg shadow-lg">
+    <div className="p-6 bg-brandBrown bg-opacity-[90%] min-h-screen flex flex-col items-center">
+      <div className="container mx-auto bg-brandBrown p-8 rounded-lg shadow-lg w-[50%]">
+        <h1 className="text-5xl font-bold text-center mb-8 text-brandYellow">
+          Recipe Results
+        </h1>
         <img
           src={recipe.strMealThumb}
           alt={recipe.strMeal}
-          className="w-[40%] h-[auto] mb-8 rounded-lg shadow-md"
+          className="w-full sm:w-2/3 md:w-1/2 lg:w-1/3 h-auto mb-8 rounded-lg shadow-md mx-auto"
         />
-        <h1 className="text-4xl font-bold text-brandOrange mb-4">
+        <h1 className="text-4xl font-bold text-brandOrange mb-4 text-center">
           {recipe.strMeal}
         </h1>
-        <p className="text-2xl font-semibold text-brandYellow mb-2">
+        <p className="text-2xl font-semibold text-brandYellow mb-2 text-center">
           {recipe.strCategory}
         </p>
-        <p className="text-lg font-semibold text-brandYellow mb-4">
+        <p className="text-lg font-light text-brandYellow mb-4 text-center">
           {recipe.strArea}
         </p>
 
-        <h2 className="text-2xl font-bold mb-4 text-brandOrange">
+        <h2 className="text-2xl font-bold mb-4 text-brandOrange text-center">
           Ingredients
         </h2>
-        <ul className="list-disc pl-6 mb-6">
+        <ul className="list-none pl-6 mb-6 text-center">
           {ingredients.map((ingredient, index) => (
-            <li key={index} className="text-lg">
+            <li key={index} className="text-lg text-brandYellow">
               {ingredient}
             </li>
           ))}
         </ul>
 
-        <h2 className="text-2xl font-bold mb-4 text-brandOrange">
+        <h2 className="text-2xl font-bold mb-4 text-brandOrange text-center">
           Instructions
         </h2>
-        <p className="text-lg mb-6">{recipe.strInstructions}</p>
+        <p className="text-lg text-brandYellow leading-relaxed mb-6 text-center break-word max-w-2xl mx-auto">
+          {recipe.strInstructions}
+        </p>
 
         {recipe.strYoutube && (
-          <div className="mb-6">
+          <div className="mb-6 text-center">
             <h2 className="text-2xl font-bold mb-4 text-brandOrange">
               Demonstrative Video
             </h2>
             <iframe
-              width="50%"
-              height="400"
+              width="90%"
+              height="315"
               src={`https://www.youtube.com/embed/${
                 recipe.strYoutube.split("v=")[1]
               }`}
@@ -124,7 +129,7 @@ const RecipeDetails = () => {
           href={recipe.strSource || `https://www.themealdb.com/meal/${idMeal}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="block mt-6 text-lg font-bold text-brandOrange underline"
+          className="block mt-6 text-lg font-bold text-brandOrange underline text-center"
         >
           View Full Recipe on TheMealDB
         </a>
