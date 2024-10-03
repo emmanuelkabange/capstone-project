@@ -13,6 +13,7 @@ function App() {
         <Route path="/results" element={<ResultsPage />} />
         <Route path="/recipe/:idMeal" element={<RecipeDetails />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
