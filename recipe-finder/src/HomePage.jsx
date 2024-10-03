@@ -58,11 +58,11 @@ const HomePage = () => {
         </h1>
 
         {/* Search Bar */}
-        <div className="mt-[20] sm:mx-3 flex justify-center items-center">
+        <div className="mt-[20] flex justify-center items-center">
           <input
             type="text"
             placeholder="Type your recipe..."
-            className="bg-white w-[687px] h-[85px] rounded-[80px] placeholder:text-black font-semibold pl-6 py-4 shadow-md focus:outline-none focus:ring-2 focus:ring-brandYellow mt-[35px]"
+            className="bg-white w-[687px] h-[85px] rounded-[80px] placeholder:text-black font-semibold pl-6 py-4 shadow-md focus:outline-none focus:ring-2 focus:ring-brandYellow mt-[35px] sm:mx-3"
             value={recipeName}
             onChange={(e) => setRecipeName(e.target.value)}
             onKeyDown={handleKeyDown}
