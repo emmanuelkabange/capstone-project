@@ -38,7 +38,7 @@ const HomePage = () => {
 
   return (
     <div
-      className="bg-cover bg-center min-h-screen"
+      className="bg-cover bg-center flex-1"
       style={{ backgroundImage: 'url("homepagebg.jpg")' }}
     >
       <header className="text-center py-16">

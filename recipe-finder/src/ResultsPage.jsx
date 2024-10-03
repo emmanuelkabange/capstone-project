@@ -48,7 +48,6 @@ const ResultsPage = () => {
           )}
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
