@@ -3,6 +3,15 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        scalePulse: {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.05)" },
+        },
+      },
+      animation: {
+        scalePulse: "scalePulse 10s infinite ease-in-out", // Create a smooth continuous scaling animation
+      },
       fontFamily: {
         fraunces: ["Fraunces", "serif"],
       },
