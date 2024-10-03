@@ -30,6 +30,12 @@ const HomePage = () => {
     }
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleSearch();
+    }
+  };
+
   return (
     <div
       className="bg-cover bg-center min-h-screen"
@@ -58,6 +64,7 @@ const HomePage = () => {
             className="bg-white w-[687px] h-[85px] rounded-[80px] placeholder:text-black font-semibold pl-6 py-4 shadow-md focus:outline-none focus:ring-2 focus:ring-brandYellow mt-[35px]"
             value={recipeName}
             onChange={(e) => setRecipeName(e.target.value)}
+            onKeyDown={handleKeyDown}
           />
           <button
             className="ml-[21px] mt-[35px] w-[123px] h-[48px] bg-white text-black font-bold rounded-[50px] shadow-lg focus:outline-none focus:ring-2 focus:ring-brandYellow"
