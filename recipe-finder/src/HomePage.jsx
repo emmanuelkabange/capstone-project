@@ -50,7 +50,7 @@ const HomePage = () => {
         />
 
         {/* Header Text */}
-        <h1 className="text-[45px] font-bold text-brandYellow mt-[65px] leading-[60px]">
+        <h1 className="text-[45px] font-bold text-brandYellow mt-[65px] sm:mt-[30px] leading-[60px]">
           Discover <span className="text-brandOrange">Quick</span>,{" "}
           <span className="text-brandOrange">Delicious</span> Recipes With{" "}
           <br />
