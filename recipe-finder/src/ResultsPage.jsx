@@ -6,7 +6,7 @@ const ResultsPage = () => {
   const location = useLocation();
   const recipes = location.state?.recipes || [];
 
-  // Log the recipes to the console for debugging
+  // Log the recipes to the console to check if the array is empty
   console.log("Recipes:", recipes);
 
   return (

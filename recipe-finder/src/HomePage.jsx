@@ -69,6 +69,7 @@ const HomePage = () => {
           />
         </div>
 
+        {/* Search Button */}
         <div>
           <button
             className="ml-[21px] mt-[25px] w-[123px] h-[48px] bg-white text-black font-bold rounded-[50px] shadow-lg focus:outline-none focus:ring-2 focus:ring-brandYellow sm:hidden"

@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
 const RecipeDetails = () => {
-  const { idMeal } = useParams(); // Get the recipe id from the URL
+  const { idMeal } = useParams(); // get the recipe id from the URL
   const [recipe, setRecipe] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const navigate = useNavigate(); // Used to redirect in case of errors
+  const navigate = useNavigate(); // in case of errors users can go back to the homepage
 
   useEffect(() => {
     const fetchRecipeDetails = async () => {
@@ -58,7 +58,7 @@ const RecipeDetails = () => {
     return <div className="text-center text-xl">No recipe found.</div>;
   }
 
-  // Extract ingredients and measures
+  // get ingredients
   const ingredients = [];
   for (let i = 1; i <= 20; i++) {
     const ingredient = recipe[`strIngredient${i}`];
