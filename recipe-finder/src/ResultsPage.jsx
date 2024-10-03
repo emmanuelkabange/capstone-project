@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import Footer from "./Footer";
 
 const ResultsPage = () => {
   const location = useLocation();
@@ -47,6 +48,7 @@ const ResultsPage = () => {
           )}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

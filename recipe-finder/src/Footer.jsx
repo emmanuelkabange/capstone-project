@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-brandYellow p-6 w-2/3 mx-auto border border-transparent rounded-lg">
+    <footer className="bg-black bg-opacity-[70%] text-brandYellow p-6 w-2/3 mx-auto border border-transparent rounded-2xl mt-8">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         {/* Links Section */}
         <div className="flex space-x-4">
